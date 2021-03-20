@@ -1,21 +1,11 @@
 # PokemonStats
+Returns mean, median, mode height and weight for given list of pokemon
 
-**TODO: Add description**
+* `mix deps.get`
+* `mix run --no-halt`
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `pokemon_stats` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:pokemon_stats, "~> 0.1.0"}
-  ]
-end
+###Example Request
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/pokemon_stats](https://hexdocs.pm/pokemon_stats).
+curl -X POST --header "Content-Type: application/json" --data '{"pokemon": ["charmander", "bulbasaur", "squirtle", "pidgey", "rattata"]}' http://localhost:4001/stats
+```
 
