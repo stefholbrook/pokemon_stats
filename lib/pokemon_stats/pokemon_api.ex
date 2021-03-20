@@ -57,7 +57,7 @@ defmodule PokemonStats.PokemonApi do
 
   def mode(list) do
     if length(Math.Enum.mode(list)) > 1 do
-      [0]
+      "No Mode"
     else
       Math.Enum.mode(list)
     end
