@@ -1,5 +1,5 @@
 # PokemonStats
-Returns mean, median, mode height and weight for given list of pokemon
+Given a list of pokemon, returns mean, median and mode for height and weight.
 
 * `mix deps.get`
 * `mix run --no-halt`
